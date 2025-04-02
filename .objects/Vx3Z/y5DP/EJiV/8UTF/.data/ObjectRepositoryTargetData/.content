@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TSfanowQz0Cl8LmnKyR1-g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/welcome" CVScreenId="f6b185df-2ebe-4184-a4c0-d28cad65bda0" CvTextArea="853, 408, 254, 36" CvTextArgument="Important Notice" CvType="Text" DesignTimeRectangle="854, 412, 251, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='header-text' parentid='mat-mdc-dialog-1' tag='DIV' type='' aaname='Important Notice' check:innerText='Important Notice' /&gt;" Guid="e053bd47-bf2d-4b18-85ba-979acbfdd29b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Welcome' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="cbb5636fc1c794f7c935f9ffb647e207.png" xmlns="">0h_qzK3qqP0WHqXt4otSkrg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

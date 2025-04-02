@@ -1,0 +1,202 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SequenceToTestOrc" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="getTextExample" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SequenceToTestOrc" sap:VirtualizedContainerService.HintSize="1127,1244" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome UiBank-Welcome" sap:VirtualizedContainerService.HintSize="484,1221" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="22dcdb92-2a60-4ef3-96ea-96c14806c1f5" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,981" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="InArgument" Name="outputElement_1" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="22dcdb92-2a60-4ef3-96ea-96c14806c1f5" Text="josueh_test1" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="uibank.uipath.com/welcome" CVScreenId="0fda83a5-8c8c-48f7-ae81-dd93d62f69e7" ContentHash="zC0aBDsZpkGBPBziDv4AKw" CvElementArea="441, 473, 349, 55" CvType="InputBox" DesignTimeRectangle="441, 474, 348, 53" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='Enter username' aaname='Username' /&gt;" Guid="cd8cafae-a446-4b0f-95e3-ea02e1a0c486" InformativeScreenshot="1ae2077c16349fbf5479df787c708919.png" IsResponsive="True" Reference="fZJ3jnRBm0G_tYP4JjZa8Q/kPn29eHLqkmUD3C0PE4ZHg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Welcome' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="0fda83a5-8c8c-48f7-ae81-dd93d62f69e7" CvTextArea="440, 446, 60, 11" CvTextArgument="Username" CvType="Text" DesignTimeRectangle="441, 444, 58, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='uibank-label' aaname='Username' check:innerText='Username' /&gt;" Guid="fe4a50fc-9602-4a42-8ffd-61f5f9ad356c" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign In'" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="22dcdb92-2a60-4ef3-96ea-96c14806c1f5" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="uibank.uipath.com/welcome" CVScreenId="0fda83a5-8c8c-48f7-ae81-dd93d62f69e7" ContentHash="J-vSeqi7bUaWGVzh6HLkLA" CvElementArea="561, 660, 105, 54" CvTextArea="586, 677, 57, 21" CvTextArgument="Sign In" CvType="Button" DesignTimeRectangle="564, 662, 101, 50" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-white col-md-12' aaname='Sign In' check:innerText='Sign In' /&gt;" Guid="c4a4c808-3789-4660-a084-569db576b190" InformativeScreenshot="e0d9ec7a57147c97a5c26b777186c9f9.png" Reference="fZJ3jnRBm0G_tYP4JjZa8Q/XpH9W-17QkKoYQZoLFrWiw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Welcome' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Label 'Label 'Important Notice''" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/welcome" CVScreenId="f6b185df-2ebe-4184-a4c0-d28cad65bda0" ContentHash="TSfanowQz0Cl8LmnKyR1-g" CvTextArea="853, 408, 254, 36" CvTextArgument="Important Notice" CvType="Text" DesignTimeRectangle="854, 412, 251, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='header-text' parentid='mat-mdc-dialog-1' tag='DIV' type='' aaname='Important Notice' check:innerText='Important Notice' /&gt;" Guid="e053bd47-bf2d-4b18-85ba-979acbfdd29b" InformativeScreenshot="cbb5636fc1c794f7c935f9ffb647e207.png" Reference="fZJ3jnRBm0G_tYP4JjZa8Q/8UTFv_B070y1QC3XDMTFTw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Welcome' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Important Notice'" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="22dcdb92-2a60-4ef3-96ea-96c14806c1f5" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="uibank.uipath.com/welcome" CVScreenId="f6b185df-2ebe-4184-a4c0-d28cad65bda0" ContentHash="fSP3no8-YE2UY2TBRWZVoQ" CvTextArea="853, 408, 254, 36" CvType="AnyWordGroup" DesignTimeRectangle="854, 412, 251, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='header-text' parentid='mat-mdc-dialog-1' tag='DIV' type='' /&gt;" Guid="37e3b0f5-f946-4075-9a9f-836555013eba" InformativeScreenshot="7893776360a41486cc8962a9a40f4fdd.png" Reference="fZJ3jnRBm0G_tYP4JjZa8Q/gFaghQPHDUiJ-_jAM13moQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Welcome' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NGetText.Target>
+              <uix:NGetText.TextString>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">getTextExample</CSharpReference>
+                </OutArgument>
+              </uix:NGetText.TextString>
+            </uix:NGetText>
+            <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="416,219" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyExpressionWithOperator.FirstExpression>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">getTextExample</CSharpValue>
+                </InArgument>
+              </uta:VerifyExpressionWithOperator.FirstExpression>
+              <uta:VerifyExpressionWithOperator.SecondExpression>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">"Important Notice"</CSharpValue>
+                </InArgument>
+              </uta:VerifyExpressionWithOperator.SecondExpression>
+            </uta:VerifyExpressionWithOperator>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" ContentHash="8mYV36NteUqYAEDOc-E2NQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAJkAAACZCAMAAAALgmiIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABgUExURfpGFvyMbv////7Rxf/z8PtpQv/5+PyumfyAX/x1UftjO/7WzP3Lvf25p/7o4vtdM/2/r/2dhPx6WP2zoPtXLP7u6fpMHf7i2vtvSfyokf7c0/yGZvpSJf2XfP3Ftvyiiq2qGj8AAAMzSURBVHhe7ZvZcqMwEEUJeMMexx7v8fr/fxnAF4O6JRNVSaOZmntekrQIfQxCkqHJHn8rGSGEEEIIqbhhdZSADyg4+MyTUUDBAc0s0MwfmvlDM39o5g/N/EluNiom+E2Q1my7abJstvi7T0qz4wlZsux0RKwjodn2gCQNX4i+SGd2NsSybIF4SzKzyRgpWubiSkhm9oUMHeJ8JjPren/LCi0gmdkVGXqYyVKZ7ZGgT4G2J15mi8JkhLiLI7Zr6Q1atrxLtD3xMlsh2mJ+SI38MvuBeMUZoT6/0PYklVkuRrMac0RLZiaHsyy7mgNaMrMbYh0XtIBkZiO5s+seLSCZmcpsXpkpzcT8JM5lUrN8MUe8mpnMEaMmpVk+mc5quflsallxJzVrOOOnJL2ZC5o10Ixmdv5LsyFtmjXQjGZ2aFZBswaa0QzQrIFmNLNDswqaNdCMZoBmDTSjmR3TrLt//0Q+9pD8ObMS0RZfsxviDUHNZoi2PBB3IT+JsX1QM7kzXzOj/CeomXy5Te5M8rZfBjWT1R9jxB2MsNkL41oOarZEtOXgKB0Dat/Gg/KgZndEX7ieZj2ZYqsXxlPfoGbq9KjSLINn2VuHWV4T1EwVDMwRt7KXhQ9m7rBmqmBAFo31USfTHJjDmslLQD/97lAFZmJnYc0+Ee64o0Wj3uwVVVxhzdRqI9u5Bo6jKq8RqQOb6cqUsb2g6lN9Bnl4A5vp02lXs4jJCSOwmVpuVKzWaOvY7tDWY4q2ltBmtrqx7HTv97bJWs7kNapDhjazVGfVHGbLojjn56KYypEfyEMW3kzNnT/joHpjcDO1HPwZ6pBFMNtbevcgMm1FeLOhf7EhK59rIpjpeWeIg66xj2Pm3dWsk2sUs5FjZLBz0CNxTRQzvds37BxruEhmliJ6B2NR8vkillm+thQRW7g4v15FM8v3t2G38s3donhm1VJnoLed3t7FimlWrTwu7uO2cS/EG+KaVSx+W1Yf85uxLrIS3axiv348NmVZzaerspw9HkvX5WhwxxvxLfIQhzCLA838oZk/NPOHZv7QzB+a+UMzf2jmzz9rdiqTYb+5SQghhJBBsuwbfx+VBGVWUxIAAAAASUVORK5CYII=" InformativeScreenshot="cc0066b004895414109b1175bef210d6.jpg" Reference="fZJ3jnRBm0G_tYP4JjZa8Q/EJiVQ-7PYUSyuXoQPT08MA" Selector="&lt;html app='chrome.exe' title='UiBank-Welcome' /&gt;" Title="UiBank-Welcome" Url="https://uibank.uipath.com/welcome" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+      <uix:NApplicationCard.WebDriverMode>
+        <InArgument x:TypeArguments="uix:NWebDriverMode">
+          <CSharpValue x:TypeArguments="uix:NWebDriverMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">NWebDriverMode.Headless</CSharpValue>
+        </InArgument>
+      </uix:NApplicationCard.WebDriverMode>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

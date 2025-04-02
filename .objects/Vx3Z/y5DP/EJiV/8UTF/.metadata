@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Label 'Important Notice'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "8UTFv_B070y1QC3XDMTFTw",
+  "Reference": "fZJ3jnRBm0G_tYP4JjZa8Q/8UTFv_B070y1QC3XDMTFTw",
+  "ParentRef": "fZJ3jnRBm0G_tYP4JjZa8Q/EJiVQ-7PYUSyuXoQPT08MA",
+  "Created": "2025-04-02T02:03:14.9998667Z",
+  "Updated": "2025-04-02T02:03:14.9998667Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

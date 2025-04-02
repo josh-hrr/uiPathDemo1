@@ -5,13 +5,14 @@
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.System.Activities": "[25.2.1]",
-    "UiPath.Testing.Activities": "[24.10.4]"
+    "UiPath.Testing.Activities": "[24.10.4]",
+    "UiPath.UIAutomation.Activities": "[24.10.11]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "25.0.161.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.197259188",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -46,6 +47,13 @@
         "testCaseId": "72be7c4e-4035-415a-b2e4-1b7af8299a40",
         "testCaseType": "TestCase",
         "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a694a68d-e5bb-4752-9419-9574bbf9e812",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCase2_example2_April1.xaml"
       }
     ],
     "saveToCloud": false

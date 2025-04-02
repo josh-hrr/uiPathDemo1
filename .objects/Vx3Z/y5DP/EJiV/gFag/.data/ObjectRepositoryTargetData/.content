@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fSP3no8-YE2UY2TBRWZVoQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/welcome" CVScreenId="f6b185df-2ebe-4184-a4c0-d28cad65bda0" CvTextArea="853, 408, 254, 36" CvType="AnyWordGroup" DesignTimeRectangle="854, 412, 251, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='header-text' parentid='mat-mdc-dialog-1' tag='DIV' type='' /&gt;" Guid="37e3b0f5-f946-4075-9a9f-836555013eba" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Welcome' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7893776360a41486cc8962a9a40f4fdd.png" xmlns="">08qQQuktg2EWvqgce4hTC-A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
